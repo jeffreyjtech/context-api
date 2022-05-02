@@ -10,6 +10,7 @@ function Theme({ children }) {
 
   return (
     // The value prop is THE prop for conveying data to context consumers
+    // Putting a state's setter function into this object is super danger
     <ThemeContext.Provider value={{ mode, setMode }}>
       {children}
     </ThemeContext.Provider>
